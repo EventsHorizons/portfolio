@@ -207,23 +207,24 @@ function initActiveNavObserver() {
 }
 
 /* --------------------------------------------------------------------------
- * 7. WebGL2 Fluid Agency Gradient (Gama Agua Marina / Oceanic Teal)
+ * 7. WebGL2 Fluid Agency Gradient (Gama Azul Ejecutiva / Deep Sapphire & Cobalt)
  *    Con fallback automático a Canvas 2D y respeto estricto a prefers-reduced-motion
  * -------------------------------------------------------------------------- */
 const BRAND_WAVE_HEX = [
-  '#031c21', // Abisal oceánico profundo
-  '#004f59', // Verde azulado marino
-  '#008b80', // Esmeralda oceánica
-  '#00d2b4', // Agua marina luminosa y vibrante
-  '#22d3ee', // Cian eléctrico
-  '#5eead4', // Menta y espuma de mar
+  '#040a16', // Azul noche abisal profundo
+  '#0a1931', // Azul medianoche zafiro
+  '#0e2246', // Azul cobalto profundo
+  '#1d4ed8', // Azul real / zafiro
+  '#2563eb', // Azul cobalto vibrante (Brand)
+  '#3b82f6', // Azul eléctrico
+  '#60a5fa', // Azul cielo sutil
 ];
 
 const GRADIENT_PARAMS = {
   color1: BRAND_WAVE_HEX[0],
-  color2: BRAND_WAVE_HEX[1],
-  color3: BRAND_WAVE_HEX[3],
-  color4: BRAND_WAVE_HEX[4],
+  color2: BRAND_WAVE_HEX[2],
+  color3: BRAND_WAVE_HEX[4],
+  color4: BRAND_WAVE_HEX[5],
   colorSize: 0.82,
   colorSpacing: 0.52,
   colorRotation: -0.381592653589793,
@@ -582,11 +583,11 @@ function initAgencyGradient() {
     params.colorRotation = baseColorRotation + soft(t + 1.1, 0.028, 0.044, 0.018, 0.018);
     params.displacement = baseDisplacement * (1 + soft(t + 3.2, 0.032, 0.05, 0.022, 0.022));
 
-    const huePhase = t * 0.18;
-    params.color1 = brandWaveColorAt(huePhase);
-    params.color2 = brandWaveColorAt(huePhase + 1.05);
-    params.color3 = brandWaveColorAt(huePhase + 2.1);
-    params.color4 = brandWaveColorAt(huePhase + 3.15);
+    const subtle = soft(t, 0.04, 0.07, 0.03, 0.4);
+    params.color1 = '#040a16';
+    params.color2 = brandWaveColorAt(1.0 + subtle);
+    params.color3 = brandWaveColorAt(3.5 + subtle * 0.8);
+    params.color4 = brandWaveColorAt(4.8 + subtle * 0.5);
 
     draw();
     rafId = requestAnimationFrame(loop);
@@ -628,9 +629,9 @@ function init2DFallback(canvas) {
   function draw2D() {
     t += 0.015;
     const grad = ctx.createLinearGradient(0, 0, width, height);
-    grad.addColorStop(0, '#031c21');
-    grad.addColorStop(0.5, '#008b80');
-    grad.addColorStop(1, '#00d2b4');
+    grad.addColorStop(0, '#040a16');
+    grad.addColorStop(0.5, '#1e40af');
+    grad.addColorStop(1, '#3b82f6');
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, width, height);
     requestAnimationFrame(draw2D);
