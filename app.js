@@ -207,23 +207,24 @@ function initActiveNavObserver() {
 }
 
 /* --------------------------------------------------------------------------
- * 7. WebGL2 Fluid Agency Gradient (Sistema visual vivo de Invends)
+ * 7. WebGL2 Fluid Agency Gradient (Gama Agua Marina / Oceanic Teal)
  *    Con fallback automático a Canvas 2D y respeto estricto a prefers-reduced-motion
  * -------------------------------------------------------------------------- */
 const BRAND_WAVE_HEX = [
-  '#4b28b5',
-  '#6d45ea',
-  '#b8a6ff',
-  '#ff2daa',
-  '#ff5fbf',
+  '#031c21', // Abisal oceánico profundo
+  '#004f59', // Verde azulado marino
+  '#008b80', // Esmeralda oceánica
+  '#00d2b4', // Agua marina luminosa y vibrante
+  '#22d3ee', // Cian eléctrico
+  '#5eead4', // Menta y espuma de mar
 ];
 
 const GRADIENT_PARAMS = {
   color1: BRAND_WAVE_HEX[0],
   color2: BRAND_WAVE_HEX[1],
-  color3: BRAND_WAVE_HEX[2],
-  color4: BRAND_WAVE_HEX[3],
-  colorSize: 0.75,
+  color3: BRAND_WAVE_HEX[3],
+  color4: BRAND_WAVE_HEX[4],
+  colorSize: 0.82,
   colorSpacing: 0.52,
   colorRotation: -0.381592653589793,
   colorSpread: 4.52,
@@ -234,7 +235,7 @@ const GRADIENT_PARAMS = {
   seed: -0.06,
   position: [-0.2816110610961914, -0.43914794921875],
   noiseSize: 0.5,
-  noiseIntensity: 0.04,
+  noiseIntensity: 0.03,
 };
 
 function hexToRgb01(hex) {
@@ -627,9 +628,9 @@ function init2DFallback(canvas) {
   function draw2D() {
     t += 0.015;
     const grad = ctx.createLinearGradient(0, 0, width, height);
-    grad.addColorStop(0, '#4b28b5');
-    grad.addColorStop(0.5, '#6d45ea');
-    grad.addColorStop(1, '#ff2daa');
+    grad.addColorStop(0, '#031c21');
+    grad.addColorStop(0.5, '#008b80');
+    grad.addColorStop(1, '#00d2b4');
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, width, height);
     requestAnimationFrame(draw2D);
