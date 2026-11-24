@@ -347,8 +347,34 @@ html[data-theme="light"].nav-open .site-header {
 
 .brand-mark {
   display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.brand-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-brand);
+  line-height: 1;
+  transition: transform var(--duration) var(--ease), color var(--duration) var(--ease);
+}
+
+.brand-symbol svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  stroke: var(--color-brand);
+  transition: stroke var(--duration) var(--ease);
+}
+
+.brand-mark:hover .brand-symbol {
+  color: var(--color-lavender);
+  transform: translateY(-1px) scale(1.08);
+}
+
+.brand-mark:hover .brand-symbol svg {
+  stroke: var(--color-lavender);
 }
 
 .brand-name {
