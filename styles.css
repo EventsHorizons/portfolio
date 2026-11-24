@@ -363,6 +363,12 @@ html[data-theme="light"].nav-open .site-header {
   font-size: var(--fs-xs);
   font-family: var(--font-mono);
   color: var(--color-muted);
+  transition: color var(--duration) var(--ease);
+  white-space: nowrap;
+}
+
+.brand-mark:hover .brand-badge {
+  color: var(--color-lavender);
 }
 
 html[data-theme="dark"] .brand-name,
@@ -1287,6 +1293,12 @@ html[data-theme="light"] .hero-title-accent {
 
   .axis-label {
     margin-bottom: 0.15rem;
+  }
+
+  @media (max-width: 580px) {
+    .brand-badge {
+      display: none;
+    }
   }
 }
 
