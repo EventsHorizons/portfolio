@@ -156,17 +156,17 @@ function initActiveNavObserver() {
 }
 
 /* --------------------------------------------------------------------------
- * 7. WebGL2 Fluid Agency Gradient (Gama Azul Ejecutiva / Deep Sapphire & Cobalt)
+ * 7. WebGL2 Fluid Agency Gradient (Achromatic Obsidian & Monochromatic Ink)
  *    Con fallback automático a Canvas 2D y respeto estricto a prefers-reduced-motion
  * -------------------------------------------------------------------------- */
 const BRAND_WAVE_HEX = [
-  '#040a16', // Azul noche abisal profundo
-  '#0a1931', // Azul medianoche zafiro
-  '#0e2246', // Azul cobalto profundo
-  '#1d4ed8', // Azul real / zafiro
-  '#2563eb', // Azul cobalto vibrante (Brand)
-  '#3b82f6', // Azul eléctrico
-  '#60a5fa', // Azul cielo sutil
+  '#000000', // Obsidiana pura abisal
+  '#080808', // Tinta profunda
+  '#131313', // Carbón
+  '#1f1f1f', // Grafito neutro
+  '#303030', // Ceniza oscuro
+  '#484848', // Acero neutro
+  '#686868', // Plata tenue
 ];
 
 const GRADIENT_PARAMS = {
@@ -533,7 +533,7 @@ function initAgencyGradient() {
     params.displacement = baseDisplacement * (1 + soft(t + 3.2, 0.032, 0.05, 0.022, 0.022));
 
     const subtle = soft(t, 0.04, 0.07, 0.03, 0.4);
-    params.color1 = '#040a16';
+    params.color1 = '#000000';
     params.color2 = brandWaveColorAt(1.0 + subtle);
     params.color3 = brandWaveColorAt(3.5 + subtle * 0.8);
     params.color4 = brandWaveColorAt(4.8 + subtle * 0.5);
@@ -578,9 +578,9 @@ function init2DFallback(canvas) {
   function draw2D() {
     t += 0.015;
     const grad = ctx.createLinearGradient(0, 0, width, height);
-    grad.addColorStop(0, '#040a16');
-    grad.addColorStop(0.5, '#1e40af');
-    grad.addColorStop(1, '#3b82f6');
+    grad.addColorStop(0, '#000000');
+    grad.addColorStop(0.5, '#141414');
+    grad.addColorStop(1, '#303030');
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, width, height);
     requestAnimationFrame(draw2D);
