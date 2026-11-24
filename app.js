@@ -73,63 +73,12 @@ function initHeaderScroll() {
 }
 
 /* --------------------------------------------------------------------------
- * 3. Hero Motion (Kinetic Reveal & Pointer Parallax 3D)
+ * 3. Hero Motion (Reveal cinético estático, sin oscilación de letras ni cursor)
  * -------------------------------------------------------------------------- */
 function initHeroMotion() {
-  const hero = document.getElementById('hero');
-  const heroContent = document.querySelector('.hero-content');
-  if (!hero || !heroContent) return;
-
-  // Disparar reveal cinético suave
   requestAnimationFrame(() => {
     document.body.classList.add('hero-ready');
   });
-
-  // Parallax 3D interactivo según la posición del cursor (desktop)
-  if (
-    window.matchMedia('(pointer: fine)').matches &&
-    !window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  ) {
-    let targetX = 0;
-    let targetY = 0;
-    let currentX = 0;
-    let currentY = 0;
-    let rafTilt = null;
-
-    function renderTilt() {
-      currentX += (targetX - currentX) * 0.08;
-      currentY += (targetY - currentY) * 0.08;
-
-      heroContent.style.transform = `perspective(1000px) rotateX(${-currentY * 3.5}deg) rotateY(${currentX * 4.5}deg) translate3d(${currentX * 8}px, ${currentY * 6}px, 0)`;
-
-      if (Math.abs(targetX - currentX) > 0.001 || Math.abs(targetY - currentY) > 0.001) {
-        rafTilt = requestAnimationFrame(renderTilt);
-      } else {
-        rafTilt = null;
-      }
-    }
-
-    hero.addEventListener(
-      'pointermove',
-      (e) => {
-        const rect = hero.getBoundingClientRect();
-        targetX = (e.clientX - rect.left) / rect.width - 0.5;
-        targetY = (e.clientY - rect.top) / rect.height - 0.5;
-        if (!rafTilt) {
-          rafTilt = requestAnimationFrame(renderTilt);
-        }
-      },
-      { passive: true }
-    );
-
-    hero.addEventListener('pointerleave', () => {
-      targetX = 0;
-      targetY = 0;
-      if (!rafTilt) {
-        rafTilt = requestAnimationFrame(renderTilt);
-      }
-    });
-  }
 }
 
 /* --------------------------------------------------------------------------

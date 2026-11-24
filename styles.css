@@ -484,8 +484,6 @@ html[data-theme="light"] .hero-veil {
   position: relative;
   z-index: 2;
   max-width: 960px;
-  transform-style: preserve-3d;
-  will-change: transform;
 }
 
 .hero-eyebrow {
@@ -500,10 +498,7 @@ html[data-theme="light"] .hero-veil {
   line-height: 1.0;
   margin-bottom: 1.75rem;
   color: var(--color-fg);
-  text-shadow:
-    0 1px 1px rgba(0, 0, 0, 0.7),
-    0 2px 18px rgba(0, 0, 0, 0.45),
-    0 12px 40px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
 }
 
 html[data-theme="light"] .hero-title {
@@ -511,18 +506,20 @@ html[data-theme="light"] .hero-title {
 }
 
 .hero-title-accent {
-  background-image: linear-gradient(135deg, #bfdbfe 0%, #60a5fa 45%, #3b82f6 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: #60a5fa !important;
+  -webkit-text-fill-color: #60a5fa !important;
+  text-shadow:
+    0 0 24px rgba(96, 165, 250, 0.70),
+    0 0 50px rgba(37, 99, 235, 0.45) !important;
   display: inline-block;
-  filter: drop-shadow(0 0 26px rgba(59, 130, 246, 0.60));
+  filter: none !important;
 }
 
 html[data-theme="light"] .hero-title-accent {
-  background-image: linear-gradient(135deg, #1d4ed8 0%, #2563eb 55%, #3b82f6 100%);
-  filter: none;
+  color: #1d4ed8 !important;
+  -webkit-text-fill-color: #1d4ed8 !important;
+  text-shadow: none !important;
+  filter: none !important;
 }
 
 .hero-body {
@@ -556,45 +553,45 @@ html[data-theme="light"] .hero-title-accent {
   transition: all var(--duration) var(--ease);
 }
 
-/* Kinetic entrance motion */
+/* Entrada estática: las letras no se desplazan ni saltan */
 .hero-eyebrow,
 .hero-title,
 .hero-body,
 .hero-meta,
 .hero-actions {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: none;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-ready .hero-eyebrow {
   opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.08s;
+  transform: none;
+  transition-delay: 0.05s;
 }
 
 .hero-ready .hero-title {
   opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.20s;
+  transform: none;
+  transition-delay: 0.12s;
 }
 
 .hero-ready .hero-body {
   opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.34s;
+  transform: none;
+  transition-delay: 0.20s;
 }
 
 .hero-ready .hero-meta {
   opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.46s;
+  transform: none;
+  transition-delay: 0.28s;
 }
 
 .hero-ready .hero-actions {
   opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.58s;
+  transform: none;
+  transition-delay: 0.36s;
 }
 
 @media (prefers-reduced-motion: reduce) {
