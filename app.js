@@ -160,13 +160,13 @@ function initActiveNavObserver() {
  *    Con fallback automático a Canvas 2D y respeto estricto a prefers-reduced-motion
  * -------------------------------------------------------------------------- */
 const BRAND_WAVE_HEX = [
-  '#000000', // Obsidiana pura abisal
-  '#080808', // Tinta profunda
-  '#131313', // Carbón
-  '#1f1f1f', // Grafito neutro
-  '#303030', // Ceniza oscuro
-  '#484848', // Acero neutro
-  '#686868', // Plata tenue
+  '#080c14', // Midnight slate abisal
+  '#0f172a', // Deep slate
+  '#1e293b', // Slate 800
+  '#334155', // Slate 700
+  '#475569', // Slate 600
+  '#64748b', // Slate 500
+  '#94a3b8', // Slate 400
 ];
 
 const GRADIENT_PARAMS = {
