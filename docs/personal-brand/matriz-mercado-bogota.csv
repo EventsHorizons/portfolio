@@ -1,0 +1,7 @@
+Sector,Tipo_Empresa,Rol_Objetivo,Rango_Salarial_COP,Moneda_Alternativa,Stack_Principal,Requisitos_Clave,Nivel_Fit_German
+Fintech / Startups,Producto Digital,Frontend Developer Mid,4500000 - 6500000,1200 - 1700 USD,React / Next.js / TypeScript / Tailwind,Autonomía / Componentes / APIs REST / Figma,Alto
+Software Factories,Servicios Globales,Frontend Engineer (Angular),5000000 - 7500000,1400 - 2000 USD,Angular 17+ / TypeScript / SCSS / RxJS,Arquitectura Standalone / Testing / CI/CD,Muy Alto (Experiencia UNP)
+Sector Público / Gobierno,Institucional,Desarrollador Web / Frontend,4000000 - 5500000,N/A (Contrato COP),Angular / HTML5 Semántico / WCAG AA / PHP,Accesibilidad pública / Informes técnicos / Seguridad,Máximo (Trayectoria en UNP)
+Agencias Creativas / Diseño,Boutique Digital,Web Developer & UI Specialist,3800000 - 5200000,1000 - 1400 USD,Next.js / Nuxt 3 / WebGL / GSAP / Figma,Sensibilidad visual / Microinteracciones / Velocidad,Muy Alto (Invends / 3Drawers)
+Empresas Medianas / Retail,Corporativo Local,Desarrollador Full-Stack Web,4000000 - 5800000,N/A (Contrato COP),React / Node.js / PostgreSQL / WordPress,Mantenimiento / Integración / Base de datos,Alto (Mercacentro / Ksaval)
+Remoto Internacional (LatAm),Startup Remota,Junior/Mid Frontend Developer,5500000 - 9500000,1500 - 2500 USD,React / Next.js / TypeScript / Supabase,Trabajo asíncrono / Git flow / Entrega continua,Alto
