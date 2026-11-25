@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Germán Andrés Gómez Colmenares — Currículum Vitae</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 14mm 14mm 14mm 14mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 9.5pt;
+      line-height: 1.45;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Contenedor Principal */
+    .cv-container {
+      max-width: 100%;
+    }
+
+    /* Encabezado */
+    .header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+    }
+
+    .name {
+      font-size: 20pt;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #0f172a;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+
+    .title {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #0284c7;
+      margin-top: 4px;
+      letter-spacing: -0.01em;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 6px;
+      font-size: 8.5pt;
+      color: #475569;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .contact-item a {
+      color: #475569;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* Secciones */
+    .section {
+      margin-bottom: 11px;
+    }
+
+    .section-title {
+      font-size: 10pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+    }
+
+    /* Resumen */
+    .summary-text {
+      font-size: 9pt;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.45;
+    }
+
+    /* Habilidades */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4px;
+      font-size: 8.8pt;
+    }
+
+    .skill-row {
+      display: flex;
+      gap: 6px;
+    }
+
+    .skill-cat {
+      font-weight: 700;
+      color: #0f172a;
+      min-width: 175px;
+    }
+
+    .skill-val {
+      color: #334155;
+      flex: 1;
+    }
+
+    /* Experiencia y Proyectos */
+    .entry {
+      margin-bottom: 8px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .entry-role {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .entry-company {
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: #0284c7;
+    }
+
+    .entry-period {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    .entry-bullets {
+      list-style-type: disc;
+      margin-left: 14px;
+      margin-top: 3px;
+    }
+
+    .entry-bullets li {
+      font-size: 8.8pt;
+      color: #334155;
+      margin-bottom: 2px;
+      line-height: 1.35;
+    }
+
+    /* Proyectos Destacados */
+    .project-item {
+      margin-bottom: 5px;
+      font-size: 8.8pt;
+    }
+
+    .project-name {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .project-stack {
+      font-weight: 600;
+      color: #64748b;
+      font-size: 8.2pt;
+    }
+
+    .project-desc {
+      color: #334155;
+      margin-top: 1px;
+      line-height: 1.35;
+    }
+
+    .project-link {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Educación */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-degree {
+      font-size: 9pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .edu-school {
+      font-size: 8.8pt;
+      color: #475569;
+    }
+
+    .edu-period {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #64748b;
+      white-space: nowrap;
+    }
+    /* Control de Paginación */
+    .page-break-before {
+      page-break-before: always;
+      break-before: page;
+      margin-top: 5px;
+    }
+
+    .avoid-break {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <!-- Header Principal -->
+    <header class="header">
+      <h1 class="name">Germán Andrés Gómez Colmenares</h1>
+      <p class="title">Frontend Engineer &amp; Digital Product Developer | UI/UX &amp; Web Architectures</p>
+      <div class="contact-bar">
+        <span class="contact-item">📍 Bogotá, Colombia</span>
+        <span class="contact-item">📱 +57 301 599 3300</span>
+        <span class="contact-item">✉️ <a href="mailto:german.gomezcol@gmail.com">german.gomezcol@gmail.com</a></span>
+        <span class="contact-item">🌐 <a href="https://andresgomez.vercel.app/">andresgomez.vercel.app</a></span>
+        <span class="contact-item">💻 <a href="https://github.com/EventsHorizons">github.com/EventsHorizons</a></span>
+        <span class="contact-item">🔗 <a href="https://linkedin.com/in/german-gomez">linkedin.com/in/german-gomez</a></span>
+      </div>
+    </header>
+
+    <!-- Perfil Profesional -->
+    <section class="section">
+      <h2 class="section-title">Perfil Profesional</h2>
+      <p class="summary-text">
+        Frontend Engineer y creador de productos digitales especializado en unir la ingeniería de software con el diseño de interfaces moderno. Dominio de arquitecturas basadas en componentes, TypeScript estricto, React, Next.js y Angular 17+ Standalone, con enfoque riguroso en accesibilidad ciudadana (WCAG AA), optimización de Core Web Vitals (98-100/100) y diseño de sistemas atómicos en Figma. Actualmente se desempeña en la modernización de portales del sector público en la Unidad Nacional de Protección (UNP), complementado con estudios universitarios en Ingeniería de Software en Uniminuto y formación técnica del SENA en desarrollo de sistemas y aplicaciones móviles.
+      </p>
+    </section>
+
+    <!-- Habilidades Técnicas -->
+    <section class="section">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <span class="skill-cat">Frontend &amp; Lenguajes:</span>
+          <span class="skill-val">TypeScript, JavaScript (ES6+), React, Next.js (App Router, SSR), Angular 17+ (Standalone Components), HTML5 Semántico, CSS3, SCSS, Tailwind CSS, Nuxt 3, Three.js, GSAP.</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">UI/UX &amp; Sistemas de Diseño:</span>
+          <span class="skill-val">Figma (Design Tokens, Auto-Layout, Variantes, Prototipado interactivo), Atomic Design, Accesibilidad Web WCAG AA, Adobe Illustrator.</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Backend &amp; Bases de Datos:</span>
+          <span class="skill-val">Node.js, Express, PostgreSQL, MySQL, Supabase (Realtime &amp; Auth), REST APIs, PHP.</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Herramientas &amp; Metodología:</span>
+          <span class="skill-val">Git, GitHub, Vercel CI/CD, Core Web Vitals (LCP, CLS, INP 100/100), AI-Assisted Workflows, Prompt Engineering, Pruebas y Ciberseguridad Web.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia Laboral -->
+    <section class="section">
+      <h2 class="section-title">Experiencia Laboral</h2>
+
+      <!-- UNP -->
+      <article class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Junior Front-End Developer</span> &mdash; 
+            <span class="entry-company">Unidad Nacional de Protección (UNP)</span>
+          </div>
+          <span class="entry-period">Feb 2026 – Presente | Bogotá, CO</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Participación activa en la modernización y migración arquitectónica del portal web institucional hacia componentes standalone en Angular 17+, reduciendo deuda técnica y optimizando tiempos de carga.</li>
+          <li>Implementación de estándares de accesibilidad web ciudadana (WCAG AA), garantizando navegación accesible para lectores de pantalla y soporte completo para teclado.</li>
+          <li>Documentación técnica y apoyo en la remediación de vulnerabilidades reportadas en auditorías de ciberseguridad web.</li>
+        </ul>
+      </article>
+
+      <!-- Mercacentro -->
+      <article class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Diseñador Gráfico &amp; Producción Audiovisual</span> &mdash; 
+            <span class="entry-company">Mercacentro S.A.S</span>
+          </div>
+          <span class="entry-period">Sep 2025 – Feb 2026 | Colombia</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Diseño de piezas visuales y material publicitario digital de alto impacto para campañas comerciales multicanal.</li>
+          <li>Producción y postproducción de activos audiovisuales corporativos optimizados para plataformas digitales.</li>
+        </ul>
+      </article>
+
+      <!-- Medinaco -->
+      <article class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Frontend &amp; UX Developer</span> &mdash; 
+            <span class="entry-company">Medinaco Agency</span>
+          </div>
+          <span class="entry-period">Feb 2025 – Sep 2025 | Colombia</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Desarrollo y maquetación de interfaces web responsivas orientadas a la conversión comercial y velocidad de navegación.</li>
+          <li>Optimización de jerarquía visual y rendimiento web, alcanzando tiempos de carga inferiores a 2 segundos en sitios para clientes corporativos.</li>
+        </ul>
+      </article>
+
+      <!-- Scala Musical -->
+      <article class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Digital Product &amp; Web Design</span> &mdash; 
+            <span class="entry-company">Corporación Scala Musical</span>
+          </div>
+          <span class="entry-period">Abr 2024 – Ene 2025 | Colombia</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Gestión estratégica y diseño de la presencia web corporativa para consolidar el alcance institucional y cultural.</li>
+          <li>Adopción de flujos asistidos por Inteligencia Artificial y Prompt Engineering para acelerar entregas creativas y prototipos de interfaz.</li>
+        </ul>
+      </article>
+
+      <!-- Ksaval Energy -->
+      <article class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Software &amp; Systems Developer</span> &mdash; 
+            <span class="entry-company">Ksaval Energy S.A.S</span>
+          </div>
+          <span class="entry-period">Nov 2023 – Abr 2024 | Colombia</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Liderazgo en el rediseño y despliegue del portal web corporativo de la compañía, modernizando su imagen y estructura técnica.</li>
+          <li>Mantenimiento y soporte a software interno con bases de datos en MySQL y PHP, además de soporte técnico a infraestructura de redes.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Educación Formal -->
+    <section class="section page-break-before">
+      <h2 class="section-title">Educación Formal</h2>
+      <div class="edu-grid">
+        <div class="edu-item">
+          <div>
+            <span class="edu-degree">Ingeniería en Software</span> &mdash; 
+            <span class="edu-school">Corporación Universitaria Minuto de Dios (Uniminuto)</span>
+          </div>
+          <span class="edu-period">2023 – En curso | Bogotá, CO</span>
+        </div>
+        <div class="edu-item">
+          <div>
+            <span class="edu-degree">Especialización Tecnológica en Desarrollo de Aplicaciones Móviles</span> &mdash; 
+            <span class="edu-school">SENA</span>
+          </div>
+          <span class="edu-period">2020 – 2021 | Colombia</span>
+        </div>
+        <div class="edu-item">
+          <div>
+            <span class="edu-degree">Tecnología en Análisis y Desarrollo de Sistemas de Información (ADSI)</span> &mdash; 
+            <span class="edu-school">SENA</span>
+          </div>
+          <span class="edu-period">2015 – 2017 | Colombia</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section class="section">
+      <h2 class="section-title">Proyectos Destacados &amp; Casos de Estudio</h2>
+      <div class="project-item">
+        <span class="project-name">Invends — Creative Studio</span> 
+        <span class="project-stack">(Nuxt 3 · TypeScript · WebGL Shaders · SSR)</span>:
+        <span class="project-desc">Plataforma con renderizado híbrido y shaders de GPU a 60 FPS sin saturar el hilo principal. 98/100 en Lighthouse.</span>
+        <a href="https://invends.vercel.app/" class="project-link">Demo</a> · <a href="https://github.com/EventsHorizons/invends-agency" class="project-link">Código</a>
+      </div>
+      <div class="project-item">
+        <span class="project-name">Scelerity — Digital Products</span> 
+        <span class="project-stack">(Next.js · React · TypeScript · Tailwind CSS)</span>:
+        <span class="project-desc">Plataforma de interfaces de producto digital con estética editorial contemporánea, tipografía rigurosa y arquitectura modular.</span>
+        <a href="https://scelerity.vercel.app/" class="project-link">Demo</a> · <a href="https://github.com/EventsHorizons/Scelerity" class="project-link">Código</a>
+      </div>
+      <div class="project-item">
+        <span class="project-name">Portal Institucional UNP</span> 
+        <span class="project-stack">(Angular 17+ · Standalone Components · TypeScript · SCSS)</span>:
+        <span class="project-desc">Arquitectura modular de componentes standalone para entidad de seguridad estatal, con foco estricto en accesibilidad ciudadana.</span>
+        <a href="https://github.com/EventsHorizons/web-unp" class="project-link">Código</a>
+      </div>
+      <div class="project-item">
+        <span class="project-name">Jera — Control de Gastos</span> 
+        <span class="project-stack">(Next.js · Supabase Realtime · PostgreSQL · Tailwind)</span>:
+        <span class="project-desc">Aplicación PWA con sincronización en tiempo real vía WebSockets y diseño thumb-driven para registro instantáneo de transacciones.</span>
+        <a href="https://github.com/EventsHorizons/jera" class="project-link">Código</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
