@@ -6,7 +6,7 @@
   <style>
     @page {
       size: letter;
-      margin: 14mm 14mm 14mm 14mm;
+      margin: 11mm 13mm 11mm 13mm;
     }
 
     * {
@@ -17,8 +17,8 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 9.5pt;
-      line-height: 1.45;
+      font-size: 9.2pt;
+      line-height: 1.4;
       color: #1e293b;
       background: #ffffff;
       -webkit-font-smoothing: antialiased;
@@ -32,12 +32,12 @@
     /* Encabezado */
     .header {
       border-bottom: 2px solid #0f172a;
-      padding-bottom: 10px;
-      margin-bottom: 12px;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .name {
-      font-size: 20pt;
+      font-size: 19pt;
       font-weight: 800;
       letter-spacing: -0.03em;
       color: #0f172a;
@@ -46,10 +46,10 @@
     }
 
     .title {
-      font-size: 11pt;
+      font-size: 10.5pt;
       font-weight: 600;
       color: #0284c7;
-      margin-top: 4px;
+      margin-top: 3px;
       letter-spacing: -0.01em;
     }
 
@@ -57,7 +57,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 6px;
+      margin-top: 5px;
       font-size: 8.5pt;
       color: #475569;
     }
@@ -79,34 +79,34 @@
 
     /* Secciones */
     .section {
-      margin-bottom: 11px;
+      margin-bottom: 9px;
     }
 
     .section-title {
-      font-size: 10pt;
+      font-size: 9.8pt;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: #0f172a;
       border-bottom: 1px solid #cbd5e1;
-      padding-bottom: 3px;
-      margin-bottom: 7px;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
     }
 
     /* Resumen */
     .summary-text {
-      font-size: 9pt;
+      font-size: 8.8pt;
       color: #334155;
       text-align: justify;
-      line-height: 1.45;
+      line-height: 1.4;
     }
 
     /* Habilidades */
     .skills-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 4px;
-      font-size: 8.8pt;
+      gap: 3px;
+      font-size: 8.6pt;
     }
 
     .skill-row {
@@ -127,7 +127,7 @@
 
     /* Experiencia y Proyectos */
     .entry {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .entry:last-child {
@@ -142,19 +142,19 @@
     }
 
     .entry-role {
-      font-size: 9.5pt;
+      font-size: 9.2pt;
       font-weight: 700;
       color: #0f172a;
     }
 
     .entry-company {
-      font-size: 9.5pt;
+      font-size: 9.2pt;
       font-weight: 600;
       color: #0284c7;
     }
 
     .entry-period {
-      font-size: 8.5pt;
+      font-size: 8.3pt;
       font-weight: 600;
       color: #64748b;
       white-space: nowrap;
@@ -163,14 +163,14 @@
     .entry-bullets {
       list-style-type: disc;
       margin-left: 14px;
-      margin-top: 3px;
+      margin-top: 2px;
     }
 
     .entry-bullets li {
-      font-size: 8.8pt;
+      font-size: 8.6pt;
       color: #334155;
-      margin-bottom: 2px;
-      line-height: 1.35;
+      margin-bottom: 1px;
+      line-height: 1.32;
     }
 
     /* Proyectos Destacados */
@@ -295,6 +295,21 @@
     <!-- Experiencia Laboral -->
     <section class="section">
       <h2 class="section-title">Experiencia Laboral</h2>
+
+      <!-- Invends -->
+      <article class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Líder Técnico &amp; Programador Principal (Lead Full-Stack Developer)</span> &mdash; 
+            <span class="entry-company">Invends (invends.com)</span>
+          </div>
+          <span class="entry-period">2024 – Presente</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Dirección técnica y desarrollo Full-Stack de productos digitales escalables, arquitecturas web/móviles y sistemas de diseño UI/UX de alta conversión.</li>
+          <li>Definición de stacks modernos, optimización de pipelines CI/CD y gestión end-to-end desde requerimientos con clientes hasta producción.</li>
+        </ul>
+      </article>
 
       <!-- UNP -->
       <article class="entry">
