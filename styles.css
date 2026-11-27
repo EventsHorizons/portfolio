@@ -1242,17 +1242,34 @@ html[data-theme="light"] .method-card:hover .method-icon {
 
 /* Modificadores de Visualización para tipos de proyectos del portafolio */
 .project-visual-scroll {
-  height: 270px;
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+  background: var(--color-surface-2);
+  display: block;
 }
 
 .project-visual-scroll img {
-  object-position: top center;
-  transition: object-position 3.5s ease-in-out, transform 0.4s var(--ease);
+  width: 100%;
+  height: auto;
+  max-width: none;
+  object-fit: unset;
+  object-position: unset;
+  display: block;
+  transform: translateY(0);
+  transition: transform 6s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
 }
 
 .project-card:hover .project-visual-scroll img {
-  object-position: bottom center;
-  transform: none;
+  transform: translateY(calc(-100% + 360px));
+}
+
+@media (hover: none) {
+  .project-visual-scroll {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .project-visual-app {
@@ -1364,16 +1381,20 @@ html[data-theme="light"] .method-card:hover .method-icon {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   padding: 0.35rem 0.75rem;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(18, 18, 18, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
   border-radius: 9999px !important;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 html[data-theme="light"] .project-badge-lead {
-  background: rgba(18, 18, 18, 0.08);
-  border: 1px solid rgba(18, 18, 18, 0.25);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   color: #121212;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-content {
