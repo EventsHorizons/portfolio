@@ -1201,6 +1201,23 @@ html[data-theme="light"] .method-card:hover .method-icon {
   gap: 2rem;
 }
 
+.projects-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .projects-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -1290,7 +1307,7 @@ html[data-theme="light"] .method-card:hover .method-icon {
 }
 
 .project-visual-branding {
-  height: 230px;
+  height: 200px;
   background: var(--color-surface-2);
   padding: 0.5rem;
 }
