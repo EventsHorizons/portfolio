@@ -1240,6 +1240,93 @@ html[data-theme="light"] .method-card:hover .method-icon {
   transform: scale(1.06);
 }
 
+/* Modificadores de Visualización para tipos de proyectos del portafolio */
+.project-visual-scroll {
+  height: 270px;
+}
+
+.project-visual-scroll img {
+  object-position: top center;
+  transition: object-position 3.5s ease-in-out, transform 0.4s var(--ease);
+}
+
+.project-card:hover .project-visual-scroll img {
+  object-position: bottom center;
+  transform: none;
+}
+
+.project-visual-app {
+  height: 230px;
+  background: var(--color-surface-2);
+  padding: 0.5rem;
+}
+
+.project-visual-app img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s var(--ease);
+}
+
+.project-card:hover .project-visual-app img {
+  transform: scale(1.03);
+}
+
+.project-visual-branding {
+  height: 230px;
+  background: var(--color-surface-2);
+  padding: 0.5rem;
+}
+
+.project-visual-branding img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-sm);
+  transition: transform 0.4s var(--ease);
+}
+
+.project-card:hover .project-visual-branding img {
+  transform: scale(1.03);
+}
+
+/* Subgrupos organizados en Proyectos */
+.projects-subgroup {
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.subgroup-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.subgroup-badge {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.subgroup-title {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--color-fg);
+}
+
+.subgroup-desc {
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+}
+
 .project-visual-scrim {
   position: absolute;
   inset: 0;
