@@ -37,7 +37,7 @@
   <link rel="shortcut icon" href="favicon.ico?v=9">
 
   <!-- Hojas de Estilo -->
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=11">
 
   <!-- Datos Estructurados JSON-LD Schema.org -->
   <script type="application/ld+json">
@@ -800,205 +800,277 @@
         </p>
         <h2 class="section-title">Soluciones y plataformas construidas</h2>
         <p class="section-desc">
-          Proyectos en producción y repositorios abiertos donde lideré la arquitectura frontend, el diseño de interfaz y
-          la integración técnica.
+          Arquitectura frontend, diseño de sistemas y desarrollo de productos digitales en producción con código e interfaces verificables.
         </p>
 
-        <div class="projects-grid">
-          <!-- Proyecto 1: Invends -->
-          <article class="project-card">
-            <div class="project-visual">
-              <img src="images/project-invends.webp" alt="Invends Creative Studio" width="600" height="340"
-                loading="lazy">
-              <div class="project-visual-scrim"></div>
-              <span class="project-badge-lead">Lead Developer</span>
-            </div>
-            <div class="project-content">
-              <div class="project-header">
-                <h3 class="project-title">Invends — Creative Studio</h3>
-                <span class="project-stack-tag">Nuxt 3 · TypeScript · WebGL Shaders · SEO Engine</span>
+        <div class="projects-container">
+          <!-- FLAGSHIP SPOTLIGHT: Invends -->
+          <article class="project-spotlight">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true">
+                  <span class="dot dot-close"></span>
+                  <span class="dot dot-min"></span>
+                  <span class="dot dot-max"></span>
+                </div>
+                <div class="browser-url">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <span>invends.com</span>
+                </div>
+                <span class="browser-badge-chip">Live Agency</span>
               </div>
-              <p class="project-desc">
-                Plataforma web de estudio creativo con sistema de diseño editorial propio, animación fluida por shaders
-                WebGL de GPU, SSR de alto rendimiento y motor SEO automatizado.
+              <div class="browser-viewport">
+                <img src="images/project-invends.webp" alt="Invends Creative Studio — Interfaz Web Oficial" width="1280" height="800" loading="lazy">
+              </div>
+            </div>
+
+            <div class="spotlight-info">
+              <div class="spotlight-badge-row">
+                <span class="spotlight-role-badge">Lead Full-Stack Developer</span>
+                <span class="spotlight-category">Estudio Creativo &amp; Digital</span>
+              </div>
+              <h3 class="spotlight-title">Invends — Creative Studio</h3>
+              <p class="spotlight-stack">Nuxt 3 · TypeScript · Shaders WebGL (GPU) · SSR · SEO Engine</p>
+              <p class="spotlight-desc">
+                Plataforma web de estudio creativo con sistema de diseño editorial propio, animación cinemática fluida acelerada por shaders WebGL de GPU, arquitectura SSR de alto rendimiento y motor SEO automatizado.
               </p>
-              <div class="project-footer">
-                <a href="https://invends.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              <div class="spotlight-specs">
+                <span class="spec-chip">Shaders WebGL</span>
+                <span class="spec-chip">Core Web Vitals 100/100</span>
+                <span class="spec-chip">Arquitectura Modular</span>
+                <span class="spec-chip">Despliegue Edge</span>
+              </div>
+              <div class="spotlight-actions">
+                <a href="https://invends.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
                   <span>Ver sitio en vivo</span>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
-                <a href="https://github.com/EventsHorizons/invends-agency" target="_blank" rel="noopener noreferrer"
-                  class="project-link" style="color:var(--color-muted);">
+                <a href="https://github.com/EventsHorizons/invends-agency" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
                   <span>GitHub</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Proyecto 2: Scelerity -->
-          <article class="project-card">
-            <div class="project-visual">
-              <img src="images/project-scelerity.webp" alt="Scelerity Digital Products" width="600" height="340"
-                loading="lazy">
-              <div class="project-visual-scrim"></div>
-              <span class="project-badge-lead">Lead Frontend &amp; UI</span>
+          <!-- CATEGORÍA 01: Productos Digitales & Web Apps -->
+          <div class="category-block">
+            <div class="category-header">
+              <span class="category-eyebrow">01. Productos Digitales &amp; Web Apps</span>
+              <h3 class="category-title">Aplicaciones funcionales en producción</h3>
+              <p class="category-desc">Desarrollo full-stack con persistencia relacional, sincronización de estado en tiempo real y diseño de interfaz de alta fidelidad.</p>
             </div>
-            <div class="project-content">
-              <div class="project-header">
-                <h3 class="project-title">Scelerity — Digital Products</h3>
-                <span class="project-stack-tag">Next.js · React · TypeScript · Tailwind CSS</span>
-              </div>
-              <p class="project-desc">
-                Estudio digital enfocado en interfaces de alto impacto. Frontend construido con diseño editorial sobrio,
-                transiciones limpias y experiencia de navegación de alto rendimiento.
-              </p>
-              <div class="project-footer">
-                <a href="https://scelerity.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <span>Ver sitio en vivo</span>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="https://github.com/EventsHorizons/Scelerity" target="_blank" rel="noopener noreferrer"
-                  class="project-link" style="color:var(--color-muted);">
-                  <span>GitHub</span>
-                </a>
-              </div>
-            </div>
-          </article>
 
-          <!-- Proyecto 3: Portal UNP -->
-          <article class="project-card">
-            <div class="project-visual">
-              <img src="images/project-unp.webp" alt="Portal Institucional UNP" width="600" height="340" loading="lazy">
-              <div class="project-visual-scrim"></div>
-              <span class="project-badge-lead">Frontend &amp; UI Developer</span>
-            </div>
-            <div class="project-content">
-              <div class="project-header">
-                <h3 class="project-title">Portal Institucional UNP</h3>
-                <span class="project-stack-tag">Angular 17+ · Standalone Components · TypeScript · SCSS</span>
-              </div>
-              <p class="project-desc">
-                Migración arquitectónica y modernización del portal web de la Unidad Nacional de Protección hacia
-                componentes standalone en Angular 17+, con foco en accesibilidad pública y seguridad.
-              </p>
-              <div class="project-footer">
-                <a href="https://github.com/EventsHorizons/web-unp" target="_blank" rel="noopener noreferrer"
-                  class="project-link">
-                  <span>Ver repositorio GitHub</span>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </article>
+            <div class="category-grid-3">
+              <!-- Proyecto: Scelerity -->
+              <article class="project-card-v2">
+                <div class="browser-frame">
+                  <div class="browser-bar">
+                    <div class="browser-dots" aria-hidden="true">
+                      <span class="dot dot-close"></span>
+                      <span class="dot dot-min"></span>
+                      <span class="dot dot-max"></span>
+                    </div>
+                    <div class="browser-url">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                      <span>scelerity.vercel.app</span>
+                    </div>
+                    <span class="browser-badge-chip">Live</span>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="images/project-scelerity.webp" alt="Scelerity — Digital Products" width="1280" height="800" loading="lazy">
+                  </div>
+                </div>
+                <div class="card-v2-body">
+                  <div class="card-v2-meta">
+                    <span class="card-v2-role">Lead Frontend &amp; UI</span>
+                  </div>
+                  <h4 class="card-v2-title">Scelerity — Digital Products</h4>
+                  <p class="card-v2-stack">Next.js · React · TypeScript · Tailwind CSS</p>
+                  <p class="card-v2-desc">
+                    Estudio digital enfocado en interfaces de alto impacto. Frontend construido con diseño editorial sobrio, transiciones limpias y experiencia de navegación de alto rendimiento.
+                  </p>
+                  <div class="card-v2-footer">
+                    <a href="https://scelerity.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                      <span>Ver en vivo</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                    <a href="https://github.com/EventsHorizons/Scelerity" target="_blank" rel="noopener noreferrer" class="project-link" style="color:var(--color-muted);">
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
 
-          <!-- Proyecto 4: 3Drawers -->
-          <article class="project-card">
-            <div class="project-visual">
-              <img src="images/project-3drawers.webp" alt="3Drawers Studio — Experiencia 3D Interactiva" width="600"
-                height="340" loading="lazy">
-              <div class="project-visual-scrim"></div>
-              <span class="project-badge-lead">Lead 3D &amp; Frontend</span>
-            </div>
-            <div class="project-content">
-              <div class="project-header">
-                <h3 class="project-title">3Drawers — 3D &amp; Digital Studio</h3>
-                <span class="project-stack-tag">Next.js · Three.js · React Three Fiber · GSAP</span>
-              </div>
-              <p class="project-desc">
-                Plataforma interactiva para estudio creativo con renderizado de modelos 3D interactivos en tiempo real
-                (Three.js / R3F), animaciones cinéticas con GSAP y arquitectura moderna en Next.js.
-              </p>
-              <div class="project-footer">
-                <a href="https://github.com/EventsHorizons/3drawers-studio" target="_blank" rel="noopener noreferrer"
-                  class="project-link">
-                  <span>Ver repositorio GitHub</span>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </article>
+              <!-- Proyecto: Jera -->
+              <article class="project-card-v2">
+                <div class="browser-frame">
+                  <div class="browser-bar">
+                    <div class="browser-dots" aria-hidden="true">
+                      <span class="dot dot-close"></span>
+                      <span class="dot dot-min"></span>
+                      <span class="dot dot-max"></span>
+                    </div>
+                    <div class="browser-url">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                      <span>fintech-sepia-pi.vercel.app</span>
+                    </div>
+                    <span class="browser-badge-chip">Live</span>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="images/project-jera.webp" alt="Jera — Control de Gastos &amp; Finanzas" width="1280" height="800" loading="lazy">
+                  </div>
+                </div>
+                <div class="card-v2-body">
+                  <div class="card-v2-meta">
+                    <span class="card-v2-role">Full-Stack Dev</span>
+                  </div>
+                  <h4 class="card-v2-title">Jera — Control de Gastos</h4>
+                  <p class="card-v2-stack">Next.js · Supabase · PostgreSQL · Tailwind</p>
+                  <p class="card-v2-desc">
+                    Aplicación web de finanzas personales de uso cotidiano construida con sincronización en tiempo real vía Supabase, persistencia relacional y diseño responsivo ultra ágil.
+                  </p>
+                  <div class="card-v2-footer">
+                    <a href="https://fintech-sepia-pi.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
+                      <span>Ver app en vivo</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                    <a href="https://github.com/EventsHorizons/jera" target="_blank" rel="noopener noreferrer" class="project-link" style="color:var(--color-muted);">
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
 
-          <!-- Proyecto 5: Unfold -->
-          <article class="project-card">
-            <div class="project-visual">
-              <img src="images/project-unfold.webp" alt="Unfold Learning OS" width="600" height="340" loading="lazy">
-              <div class="project-visual-scrim"></div>
-              <span class="project-badge-lead">Full-Stack Dev</span>
+              <!-- Proyecto: Unfold -->
+              <article class="project-card-v2">
+                <div class="browser-frame">
+                  <div class="browser-bar">
+                    <div class="browser-dots" aria-hidden="true">
+                      <span class="dot dot-close"></span>
+                      <span class="dot dot-min"></span>
+                      <span class="dot dot-max"></span>
+                    </div>
+                    <div class="browser-url">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                      <span>unfold-rouge-beta.vercel.app</span>
+                    </div>
+                    <span class="browser-badge-chip">Live</span>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="images/project-unfold.webp" alt="Unfold — Learning OS" width="1280" height="800" loading="lazy">
+                  </div>
+                </div>
+                <div class="card-v2-body">
+                  <div class="card-v2-meta">
+                    <span class="card-v2-role">Full-Stack Dev</span>
+                  </div>
+                  <h4 class="card-v2-title">Unfold — Learning OS</h4>
+                  <p class="card-v2-stack">Next.js · NestJS · TypeScript · PostgreSQL</p>
+                  <p class="card-v2-desc">
+                    Sistema operativo de aprendizaje universitario para gestión académica, rutas de estudio estructuradas e integración de backend desacoplado con NestJS.
+                  </p>
+                  <div class="card-v2-footer">
+                    <a href="https://unfold-rouge-beta.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
+                      <span>Ver demo en vivo</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                    <a href="https://github.com/EventsHorizons/unfold" target="_blank" rel="noopener noreferrer" class="project-link" style="color:var(--color-muted);">
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
             </div>
-            <div class="project-content">
-              <div class="project-header">
-                <h3 class="project-title">Unfold — Learning OS</h3>
-                <span class="project-stack-tag">Next.js · NestJS · TypeScript · PostgreSQL</span>
-              </div>
-              <p class="project-desc">
-                Sistema operativo de aprendizaje universitario para gestión académica, rutas de estudio estructuradas e
-                integración de backend desacoplado con NestJS.
-              </p>
-              <div class="project-footer">
-                <a href="https://github.com/EventsHorizons/unfold" target="_blank" rel="noopener noreferrer"
-                  class="project-link">
-                  <span>Ver repositorio GitHub</span>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </article>
+          </div>
 
-          <!-- Proyecto 6: Jera -->
-          <article class="project-card">
-            <div class="project-visual">
-              <img src="images/project-jera.webp" alt="Jera Control de Gastos" width="600" height="340" loading="lazy">
-              <div class="project-visual-scrim"></div>
-              <span class="project-badge-lead">Full-Stack Dev</span>
+          <!-- CATEGORÍA 02: Arquitectura Frontend & Plataformas Especializadas -->
+          <div class="category-block">
+            <div class="category-header">
+              <span class="category-eyebrow">02. Arquitectura Frontend &amp; Plataformas Especializadas</span>
+              <h3 class="category-title">Escalabilidad, accesibilidad y gráficos interactivos</h3>
+              <p class="category-desc">Implementaciones con requerimientos rigurosos de accesibilidad pública (WCAG AA), componentes standalone y renderizado 3D en tiempo real.</p>
             </div>
-            <div class="project-content">
-              <div class="project-header">
-                <h3 class="project-title">Jera — Control de Gastos</h3>
-                <span class="project-stack-tag">Next.js · Supabase · PostgreSQL · Tailwind</span>
-              </div>
-              <p class="project-desc">
-                Aplicación de finanzas personales de uso cotidiano construida con sincronización en tiempo real vía
-                Supabase, persistencia relacional y diseño responsivo ultra ágil.
-              </p>
-              <div class="project-footer">
-                <a href="https://github.com/EventsHorizons/jera" target="_blank" rel="noopener noreferrer"
-                  class="project-link">
-                  <span>Ver repositorio GitHub</span>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-              </div>
+
+            <div class="category-grid-2">
+              <!-- Proyecto: Portal UNP -->
+              <article class="project-card-v2">
+                <div class="browser-frame">
+                  <div class="browser-bar">
+                    <div class="browser-dots" aria-hidden="true">
+                      <span class="dot dot-close"></span>
+                      <span class="dot dot-min"></span>
+                      <span class="dot dot-max"></span>
+                    </div>
+                    <div class="browser-url">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                      <span>unp.gov.co</span>
+                    </div>
+                    <span class="browser-badge-chip">Portal Público</span>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="images/project-unp.webp" alt="Portal Institucional UNP" width="1280" height="800" loading="lazy">
+                  </div>
+                </div>
+                <div class="card-v2-body">
+                  <div class="card-v2-meta">
+                    <span class="card-v2-role">Frontend &amp; UI Developer</span>
+                  </div>
+                  <h4 class="card-v2-title">Portal Institucional UNP</h4>
+                  <p class="card-v2-stack">Angular 17+ · Standalone Components · TypeScript · SCSS</p>
+                  <p class="card-v2-desc">
+                    Modernización arquitectónica del portal web de la Unidad Nacional de Protección hacia componentes standalone en Angular 17+, con estándares estrictos de accesibilidad ciudadana WCAG AA, rendimiento y seguridad.
+                  </p>
+                  <div class="card-v2-footer">
+                    <a href="https://www.unp.gov.co" target="_blank" rel="noopener noreferrer" class="project-link">
+                      <span>Ver portal oficial</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                    <a href="https://github.com/EventsHorizons/web-unp" target="_blank" rel="noopener noreferrer" class="project-link" style="color:var(--color-muted);">
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Proyecto: 3Drawers -->
+              <article class="project-card-v2">
+                <div class="browser-frame">
+                  <div class="browser-bar">
+                    <div class="browser-dots" aria-hidden="true">
+                      <span class="dot dot-close"></span>
+                      <span class="dot dot-min"></span>
+                      <span class="dot dot-max"></span>
+                    </div>
+                    <div class="browser-url">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                      <span>3drawers-studio</span>
+                    </div>
+                    <span class="browser-badge-chip">3D WebGL</span>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="images/project-3drawers.webp" alt="3Drawers Studio — Experiencia 3D Interactiva" width="1280" height="720" loading="lazy">
+                  </div>
+                </div>
+                <div class="card-v2-body">
+                  <div class="card-v2-meta">
+                    <span class="card-v2-role">Lead 3D &amp; Frontend</span>
+                  </div>
+                  <h4 class="card-v2-title">3Drawers — 3D &amp; Digital Studio</h4>
+                  <p class="card-v2-stack">Next.js · Three.js · React Three Fiber · GSAP</p>
+                  <p class="card-v2-desc">
+                    Plataforma interactiva para estudio creativo con renderizado de modelos 3D en tiempo real (Three.js / R3F), animaciones cinéticas con GSAP y arquitectura moderna en Next.js App Router.
+                  </p>
+                  <div class="card-v2-footer">
+                    <a href="https://github.com/EventsHorizons/3drawers-studio" target="_blank" rel="noopener noreferrer" class="project-link">
+                      <span>Ver repositorio GitHub</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
