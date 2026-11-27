@@ -665,12 +665,15 @@ html[data-theme="light"] .site-header .mobile-nav-toggle svg {
 html[data-theme="dark"] .theme-toggle .sun-icon {
   display: block !important;
 }
+
 html[data-theme="dark"] .theme-toggle .moon-icon {
   display: none !important;
 }
+
 html[data-theme="light"] .theme-toggle .sun-icon {
   display: none !important;
 }
+
 html[data-theme="light"] .theme-toggle .moon-icon {
   display: block !important;
 }
